@@ -1,9 +1,12 @@
 package com.helloworld
 
+import android.os.Bundle
+import android.widget.FrameLayout
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.fabricEnabled
 import com.facebook.react.defaults.DefaultReactActivityDelegate
+import com.helloworld.helpers.rootView
 
 class MainActivity : ReactActivity() {
 
@@ -19,4 +22,16 @@ class MainActivity : ReactActivity() {
    */
   override fun createReactActivityDelegate(): ReactActivityDelegate =
       DefaultReactActivityDelegate(this, mainComponentName, fabricEnabled)
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        addFragmentContainer()
+    }
+
+    private fun addFragmentContainer() = rootView.addView(
+        FrameLayout(this).apply {
+            id = R.id.fragment_container
+            layoutParams = FrameLayout.LayoutParams(0, 0)
+        },
+    )
 }
