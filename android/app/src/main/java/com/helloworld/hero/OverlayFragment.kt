@@ -1,11 +1,9 @@
 package com.helloworld.hero
 
-import android.content.MutableContextWrapper
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.WindowManager
 import android.widget.FrameLayout
 import androidx.fragment.app.Fragment
 import com.facebook.react.ReactRootView
@@ -16,7 +14,6 @@ import com.helloworld.helpers.reactInstanceManager
 class OverlayFragment: Fragment() {
     companion object {
         fun newInstance(): Fragment {
-            // return Builder().setComponentName("Hero.HeroScreen").setFabricEnabled(false).build()
             return OverlayFragment()
         }
     }
@@ -27,7 +24,7 @@ class OverlayFragment: Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        activity?.window?.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_NOTHING)
+        // activity?.window?.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_NOTHING)
     }
 
     override fun onCreateView(
