@@ -10,9 +10,7 @@ export const HeroScreen = () => {
 
   return (
     <View style={styles.container}>
-      {/* <TouchableOpacity style={styles.button} onPress={onPressCloseHero}>
-        <Text style={styles.buttonText}>Close Modal</Text>
-      </TouchableOpacity> */}
+      <Text style={styles.fragmentText}>Some content</Text>
     </View>
   );
 };

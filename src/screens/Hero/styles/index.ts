@@ -1,16 +1,11 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-  button: {
-    alignItems: "center",
-    backgroundColor: "#505050",
-    justifyContent: "center",
-    height: 40,
-    marginTop: 10,
-  },
-  buttonText: {
+  fragmentText: {
     color: "#FFFFFF",
     textAlign: "center",
+    fontSize: 20,
+    top: "50%",
   },
   container: {
     backgroundColor: "#FF0000",

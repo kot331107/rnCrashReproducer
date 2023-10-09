@@ -17,13 +17,13 @@ export const styles = StyleSheet.create({
     height: "100%",
     flex: 1,
     flexDirection: "column",
+    padding: 10,
     width: "100%",
   },
   input: {
     backgroundColor: "#ffffff",
     height: 40,
-    margin: 12,
     borderWidth: 1,
-    padding: 10,
+    marginTop: 12,
   },
 });
